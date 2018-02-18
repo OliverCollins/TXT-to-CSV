@@ -1,5 +1,5 @@
 # Open the txt file
-file = open("INPUT.txt", 'r', encoding = "ISO-8859-1")
+file = open("INPUT.txt", 'r', encoding = "utf-8")
 
 # Read the file
 new_text = file.readlines()
