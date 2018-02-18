@@ -1,0 +1,26 @@
+# Open the txt file
+file = open("INPUT.txt", 'r', encoding = "ISO-8859-1")
+
+# Read the file
+new_text = file.readlines()
+
+# Create a list to keep all the words in file
+words = []
+line_break = 0
+
+# Add all the words in file to list
+for x in range(0, len(new_text)):
+	for word in new_text[x].split():
+		words.append(word + ',')
+
+# Write words into csv file
+f = open('OUTPUT.csv','w')
+for x in range(0, len(words)):
+	if (line_break == NUM_OF_ATTRIBUTES):
+		f.write('\n')
+		f.write(words[x])
+		line_break = 1
+	else:
+		f.write(words[x])
+		line_break += 1
+f.close()
