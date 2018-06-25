@@ -16,7 +16,7 @@ for x in range(0, len(new_text)):
 # Write words into csv file
 f = open('OUTPUT.csv','w')
 for x in range(0, len(words)):
-	if (line_break == Number of Attributes):
+	if (line_break == NUMBER OF ATTRIBUTES):
 		f.write('\n')
 		f.write(words[x])
 		line_break = 1
